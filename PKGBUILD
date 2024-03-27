@@ -3,9 +3,9 @@ pkgdesc="ROS - This package provides common interfaces for navigation specific r
 url='https://wiki.ros.org/nav_core'
 
 pkgname='ros-noetic-nav-core'
-pkgver='1.16.2'
+pkgver='1.17.3'
 arch=('any')
-pkgrel=2
+pkgrel=1
 license=('BSD')
 
 ros_makedepends=(ros-noetic-std-msgs
@@ -31,7 +31,7 @@ depends=(${ros_depends[@]})
 # Tarball version (faster download)
 _dir="navigation-${pkgver}/nav_core"
 source=("${pkgname}-${pkgver}.tar.gz"::"https://github.com/ros-planning/navigation/archive/${pkgver}.tar.gz")
-sha256sums=('d83201296e773e2789635fddf39ac18e9465219b18707e53bd2361de4762d205')
+sha256sums=('6500e427f868ea63801203715f41cbec4ed1bd1f9a29ae130a74b3776a7684f6')
 
 build() {
   # Use ROS environment variables
